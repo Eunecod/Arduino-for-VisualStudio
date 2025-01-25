@@ -1,7 +1,7 @@
 # Arduino for Visual Studio
 
 Languages:
-- [Русский](README.ru.md)
+- [Russian](README.ru.md)
 
 This project is designed for developing software for AVR microcontrollers using WinAVR in the Visual Studio environment.
 
