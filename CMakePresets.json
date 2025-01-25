@@ -1,0 +1,29 @@
+﻿{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "avr-debug",
+      "hidden": false,
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "avr-gcc",
+        "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/toolchain.cmake",
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_C_FLAGS": "-Os -Wall -Wextra"
+      }
+    },
+    {
+      "name": "avr-release",
+      "hidden": false,
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "avr-gcc",
+        "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/toolchain.cmake",
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_C_FLAGS": "-Os -Wall -Wextra"
+      }
+    }
+  ]
+}
