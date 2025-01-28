@@ -15,8 +15,3 @@ add_custom_target(UPLOAD ALL
     DEPENDS ${PROJECT_NAME}.elf
     COMMENT "Загрузка прошивки на Arduino"
 )
-
-target_compile_definitions(${PROJECT_NAME}.elf PUBLIC
-    __AVR_ATmega328P__
-    F_CPU=16000000UL
-)
